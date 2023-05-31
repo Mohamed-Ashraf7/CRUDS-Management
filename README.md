@@ -1,5 +1,5 @@
 # CRUDS-Management
-CRUD Management System using Vanilla JavaScript
+Responsive CRUD Management System using Vanilla JavaScript
 This project is a simple CRUD (Create, Read, Update, Delete) management system implemented using Vanilla JavaScript. 
 It allows users to create, read, update, delete, and search for products in an organized manner.
 /*******************************/
