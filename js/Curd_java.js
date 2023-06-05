@@ -17,7 +17,7 @@ let dataArr;
 let temp;
 let User = "create";
 let UserSearch = "";
-let TableData = document.getElementById("Body");
+let TableData = document.getElementById("table_Body");
 
 if (localStorage.length > 0) {
   dataArr = JSON.parse(localStorage.Products);

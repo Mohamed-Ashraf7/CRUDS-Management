@@ -3,6 +3,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Management System is a powerful tool that simplifies the handling of data in an application "
+    />
+
     <title>C U R D S</title>
     <!--  main  Css links  -->
     <link rel="stylesheet" href="css/CRuDS_STYle.css" />
@@ -39,12 +44,12 @@
     >
       <!--    first section    -->
       <div class="container head">
-        <h2 class="p-2 mx-auto text-center">
+        <h2 class="p-2 mx-auto text-center position-relative">
           Product Management System <i class="fa-solid fa-gear"></i>
         </h2>
       </div>
-      <div class="container main">
-        <div class="row g-3 Data">
+      <div class="container main position-relative">
+        <div class="row g-3 Data position-relative">
           <div class="col-md-12">
             <input id="title" placeholder="Product Name" type="text" />
           </div>
@@ -87,8 +92,10 @@
             <input id="count" placeholder="Quantity" type="number" />
           </div>
           <div class="col-md-8 mx-auto row mt-3">
-            <p id="span" class="col-3">Total Price:</p>
-            <p id="total" class="col-8">00</p>
+            <p id="span" class="col-3 text-white text-center bg-black">
+              Total Price:
+            </p>
+            <p id="total" class="col-8 bg-black text-white text-center">00</p>
           </div>
           <div class="col-md-11 mx-auto">
             <button id="create" class="btn w-100 text-uppercase">
@@ -129,7 +136,7 @@
                   <th>Delete</th>
                 </tr>
               </thead>
-              <tbody id="Body"></tbody>
+              <tbody id="table_Body"></tbody>
             </table>
           </div>
         </div>
