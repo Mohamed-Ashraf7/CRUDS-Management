@@ -41,7 +41,7 @@
 #total {
   padding: 10px;
 }
-#delete,
+#Delete,
 #search,
 #span,
 #update {
@@ -64,7 +64,7 @@
 }
 #crud {
   background-image: url("../pic/pexels-rodolfo-quirós-2330137.jpg");
-  background-position: 10% 70%;
+  background-position: 25% 100%;
 }
 #crud .head {
   margin-bottom: 3rem;
@@ -232,7 +232,7 @@ select::placeholder {
   margin-left: 8px;
   font-size: 16px;
 }
-#delete,
+#Delete,
 #update {
   padding: 10px;
   border: none;
@@ -247,7 +247,7 @@ select::placeholder {
   transition: 0.9s;
   overflow: hidden;
 }
-#delete::before,
+#Delete::before,
 #update::before {
   content: "";
   position: absolute;
@@ -262,18 +262,18 @@ select::placeholder {
   box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
   transition: 250ms;
 }
-#delete:hover,
+#Delete:hover,
 #update:hover {
   color: #212121;
 }
-#delete:hover::before,
+#Delete:hover::before,
 #update:hover::before {
   width: 100%;
 }
 .fa-circle-xmark {
   margin-left: 5px;
 }
-#delete:hover .fa-circle-xmark {
+#Delete:hover .fa-circle-xmark {
   color: #bf0426;
 }
 #update,

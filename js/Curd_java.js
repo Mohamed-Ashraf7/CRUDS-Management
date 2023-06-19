@@ -47,7 +47,8 @@ create.onclick = function () {
       Swal.fire({
         icon: "success",
         title: "Success",
-        text: "Successful operation",
+        background: "#212121",
+        html: "<span style='color:black; font-size:30px;'>Successful operation</span>",
       });
       ClearAll();
     } else if (User === "update") {
@@ -57,6 +58,7 @@ create.onclick = function () {
       Swal.fire({
         icon: "success",
         title: "Success",
+        background: "#212121",
         html: "<span style='color:white; font-size:30px;'>Your Product updated well!</span>",
       });
       ClearAll();
@@ -124,8 +126,9 @@ function ShowData() {
 function DeletBTn(x) {
   Swal.fire({
     title: "Are you sure you want to Delete this item?",
-    text: "You won't be able to revert this!",
+    html: "<p style='color:white;font-size:20px;text-align:center;'>You won't be able to revert this!</p>",
     icon: "warning",
+    background: "#212121",
     showCancelButton: true,
     confirmButtonColor: "#3085d6",
     cancelButtonColor: "#d33",
@@ -135,7 +138,12 @@ function DeletBTn(x) {
       dataArr.splice(x, 1);
       localStorage.Products = JSON.stringify(dataArr);
       ShowData();
-      Swal.fire("Deleted!", "Your file has been deleted.", "success");
+      Swal.fire({
+        icon: "success",
+        title: "Success",
+        html: "<p style='color:black; font-size:20px;text-align:center'>Your file has been deleted.</p>",
+        background: "#212121",
+      });
     }
   });
 }
@@ -164,6 +172,7 @@ function deleteAllData() {
     title: "Are you sure you want to Delete all?",
     text: "You won't be able to revert this!",
     icon: "warning",
+    background: "#212121",
     showCancelButton: true,
     confirmButtonColor: "#3085d6",
     cancelButtonColor: "#d33",
@@ -173,7 +182,12 @@ function deleteAllData() {
       dataArr.splice(0);
       localStorage.clear();
       ShowData();
-      Swal.fire("Deleted!", "Your file has been deleted.", "success");
+      Swal.fire({
+        icon: "success",
+        title: "Success",
+        html: "<p style='color:black; font-size:20px;text-align:center'>Your file has been deleted.</p>",
+        background: "#212121",
+      });
     }
   });
 }
