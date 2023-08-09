@@ -62,6 +62,7 @@ create.onclick = function () {
         html: "<span style='color:white; font-size:30px;'>Your Product updated well!</span>",
       });
       ClearAll();
+      User = "create";
     }
   } else {
     Swal.fire({
